@@ -1,0 +1,11 @@
+{
+  "name": "@sears/tsconfig",
+  "version": "0.0.1",
+  "description": "Shared TypeScript configurations for the Sears monorepo",
+  "private": true,
+  "exports": {
+    "./base.json": "./base.json",
+    "./nestjs.json": "./nestjs.json",
+    "./nextjs.json": "./nextjs.json"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@sears/contracts",
+  "version": "0.0.1",
+  "description": "Shared contracts: types, enums, interfaces, and Zod schemas for FE and BE",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "dev": "tsc --project tsconfig.build.json --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@sears/tsconfig": "workspace:*",
+    "typescript": "^5.6.3"
+  }
+}

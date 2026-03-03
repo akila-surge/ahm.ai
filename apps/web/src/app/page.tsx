@@ -1,0 +1,31 @@
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { Features } from '@/components/sections/Features';
+import { Pricing } from '@/components/sections/Pricing';
+import { HowItWorks } from '@/components/sections/HowItWorks';
+import { CTABanner } from '@/components/sections/CTABanner';
+import { TrustedBy } from '@/components/sections/TrustedBy';
+import { Comparison } from '@/components/sections/Comparison';
+import { Testimonials } from '@/components/sections/Testimonials';
+import { FAQ } from '@/components/sections/FAQ';
+
+export default function HomePage() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <TrustedBy />
+        <Features />
+        <HowItWorks />
+        <Pricing />
+        <CTABanner />
+        <Comparison />
+        <Testimonials />
+        <FAQ />
+      </main>
+      <Footer />
+    </>
+  );
+}
