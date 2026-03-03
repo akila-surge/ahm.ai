@@ -1,3 +1,5 @@
+import { CheckCircle2, XCircle } from 'lucide-react';
+
 const ROWS = [
   {
     label: 'Maintenance tracking',
@@ -71,10 +73,16 @@ export function Comparison() {
                     {row.label}
                   </td>
                   <td className="p-5 align-middle bg-primary-dim/30">
-                    <p className="text-[0.9rem] text-foreground leading-[1.5]">{row.ai}</p>
+                    <div className="flex items-start gap-2.5 text-[0.9rem] text-foreground leading-[1.5]">
+                      <CheckCircle2 size={17} className="text-primary flex-shrink-0 mt-0.5" />
+                      <span>{row.ai}</span>
+                    </div>
                   </td>
                   <td className="p-5 align-middle">
-                    <p className="text-[0.9rem] text-muted leading-[1.5]">{row.manual}</p>
+                    <div className="flex items-start gap-2.5 text-[0.9rem] text-muted leading-[1.5]">
+                      <XCircle size={17} className="text-red-400 flex-shrink-0 mt-0.5" />
+                      <span>{row.manual}</span>
+                    </div>
                   </td>
                 </tr>
               ))}

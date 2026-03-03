@@ -1,16 +1,18 @@
+import { LogIn, ClipboardList, Gift } from 'lucide-react';
+
 const STEPS = [
   {
-    step: '1',
+    Icon: LogIn,
     title: 'Join free or log in',
     desc: 'Join for free or simply use your existing Shop Your Way or Sears Home Advantage Member credentials to access your member benefits.',
   },
   {
-    step: '2',
+    Icon: ClipboardList,
     title: 'Complete your home profile',
     desc: 'Get personalized recommendations, schedule services effortlessly, and unlock exclusive member-only discounts tailored to your home.',
   },
   {
-    step: '3',
+    Icon: Gift,
     title: 'Browse, earn and redeem',
     desc: 'Explore home solutions, earn rewards on services and protection plans, and redeem your points for even more savings!',
   },
@@ -36,11 +38,11 @@ export function HowItWorks() {
 
           {/* Steps */}
           <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-            {STEPS.map(({ step, title, desc }) => (
-              <div key={step} className="flex flex-col items-center text-center gap-5">
-                {/* Step circle */}
-                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary text-white text-[1.375rem] font-bold flex-shrink-0">
-                  {step}
+            {STEPS.map(({ Icon, title, desc }, i) => (
+              <div key={i} className="flex flex-col items-center text-center gap-5">
+                {/* Step icon circle */}
+                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary text-white flex-shrink-0">
+                  <Icon size={26} strokeWidth={1.75} />
                 </div>
                 <h3 className="text-[1.0625rem] font-semibold text-black">{title}</h3>
                 <p className="text-[1rem] text-muted leading-[1.7]">{desc}</p>

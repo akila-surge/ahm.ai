@@ -1,3 +1,5 @@
+import { CheckCircle } from 'lucide-react';
+
 const CTA_BG = 'https://www.figma.com/api/mcp/asset/ceb89303-30cc-4eed-9618-e4b5f89eaf47';
 const CARD_BG = 'https://www.figma.com/api/mcp/asset/80b835dc-6261-4d4a-91f7-3ac681580fd9';
 
@@ -30,9 +32,7 @@ export function CTABanner() {
       {/* Bottom — card + bullets */}
       <div className="relative z-10 mt-16 flex flex-col gap-4 max-w-[1344px] mx-auto w-full">
         {/* Card */}
-        <div
-          className="relative rounded-2xl overflow-hidden"
-        >
+        <div className="relative rounded-2xl overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${CARD_BG})` }}
@@ -56,7 +56,7 @@ export function CTABanner() {
         <div className="flex items-center gap-8 flex-wrap">
           {BULLETS.map((bullet) => (
             <div key={bullet} className="flex items-center gap-2.5">
-              <span className="w-4.5 h-4.5 rounded-full bg-primary flex-shrink-0" />
+              <CheckCircle size={18} className="text-primary flex-shrink-0" />
               <span className="text-[1rem] text-white">{bullet}</span>
             </div>
           ))}

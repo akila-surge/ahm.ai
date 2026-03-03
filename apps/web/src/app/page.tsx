@@ -16,11 +16,11 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <TrustedBy />
         <Features />
-        <HowItWorks />
         <Pricing />
+        <HowItWorks />
         <CTABanner />
+        <TrustedBy />
         <Comparison />
         <Testimonials />
         <FAQ />
