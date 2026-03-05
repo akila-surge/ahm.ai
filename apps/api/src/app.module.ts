@@ -34,8 +34,6 @@ import { HealthModule } from './modules/health/health.module';
     // ─── Feature modules ────────────────────────────────────────────────────
     HealthModule,
     // Add your domain modules here, e.g.:
-    // UsersModule,
-    // ProductsModule,
   ],
   controllers: [AppController],
   providers: [
